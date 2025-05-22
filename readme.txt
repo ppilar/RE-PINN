@@ -1,6 +1,6 @@
 To perform experiments, run the 'punc.py' file. Settings can be specified in the 'input.py' file. The file located in the 'results' folder will be used.
 
-Results of one experiment (with potentially multiple runs) can be plotted with the 'plot_results.py' file. This will als produce text files with statistics given in the Tables in the paper.
+Results of one experiment (with potentially multiple runs) can be plotted with the 'plot_results.py' file. This will also produce text files with statistics given in the Tables in the paper.
 
 To run multiple experiments with different settings, use the 'master.py' file. A new folder will be created for each setting, if it does not exist already. The 'input.py' file from the 'results' folder will be used.
 
