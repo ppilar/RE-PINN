@@ -26,12 +26,8 @@ pyro.set_rng_seed(s)
 
 pars = {}
 #%%
-
-fpath = '../results/ds5_N_train10v2_gap_fn1/'
-fname = 'x5N25r5.dat'
-
-#fpath = '../results/res_ds1_N_ensemble/ds1_N_ensemble5/'
-#fname = 'x1N5r5.dat'
+fpath = '../results/test/'
+fname = 'x5N10r1.dat'
 
 
 with open(fpath + fname, 'rb') as f:

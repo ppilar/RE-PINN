@@ -22,20 +22,8 @@ def add_MC_metrics(res, res_mc):
         res.W_gesges[:,jN], res.W_dpar_gesges[:,jN] = calculate_MC_agreement(res, res_mc, jN, opt='W')
         
 #%%
-# fpath = '../results/res_ds1_N_ensemble/ds1_N_ensemble50/'
-# fname = 'x1N50r5.dat'
-# fpath_mc = '../results/res_ds1_N_ensemble/ds1_N_ensemble5/'
-# fname_mc = 'x1N5r5.dat' 
-
-# fpath= '../results/res_ds7_N_ensemble25_fn1.0/'
-# fname = 'x7N25r5.dat'
-
-fpath = '../results/res_ds102_N_ensemble50_repf_lf0.1/'
-fname = 'x102N50r5.dat'
-
-# fpath = '../results/res_ds5_N_train10v2_gap_fn1/'
-# fname = 'x5N25r5.dat'
-
+fpath = '../results/test/'
+fname = 'x5N10r1.dat'
 
 
 
@@ -143,12 +131,12 @@ if plot_ds1_front_figure:
 #%%
 
 jm, jN = 0, 0
-plot_ds102_data = True
+plot_ds102_data = False
 if plot_ds102_data:
     plot_data_ds102(res, jm, jN, fpath + 'plots/', 'data_jN'+str(jN))
     
 #%%
-plot_ds102_samples = True
+plot_ds102_samples = False
 if plot_ds102_samples:
     jN = 0
     jm_vec = [0, 1, 2, 4, 5, 6]
